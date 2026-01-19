@@ -1,0 +1,79 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CyphlensSSE
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+@_exported import CyphlensSSE
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class Cyphlens {
+  public init()
+  @objc deinit
+  public func setEnvironment(_ environment: CyphlensSSE.CyphlensEnvironment)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func listen(sessionId: Swift.String, onData: CyphlensSSE.EventCallback? = nil, onError: CyphlensSSE.CyphlensErrorCallback? = nil)
+  #endif
+  public func stop()
+}
+public enum CyphlensEnvironment {
+  case sandbox
+  case production
+  public static func == (a: CyphlensSSE.CyphlensEnvironment, b: CyphlensSSE.CyphlensEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum EventType : Swift.String {
+  case mfaSwipe
+  case disconnect
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum StatusType : Swift.String, Swift.Codable {
+  case pending
+  case success
+  case expired
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol CyphlensEvent {
+}
+public struct TwoFactorEvent : CyphlensSSE.CyphlensEvent, Swift.Codable {
+  public let sessionId: Swift.String
+  public let status: CyphlensSSE.StatusType
+  public let timestamp: Swift.Int64
+  public let expiresAt: Swift.Int64?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(sessionId: Swift.String, status: CyphlensSSE.StatusType, timestamp: Swift.Int64, expiresAt: Swift.Int64?)
+  #endif
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct DisconnectEvent : CyphlensSSE.CyphlensEvent {
+  public let message: Swift.String
+  public init(message: Swift.String)
+}
+public typealias EventCallback = (CyphlensSSE.EventType, any CyphlensSSE.CyphlensEvent) -> Swift.Void
+public typealias CyphlensErrorCallback = (any Swift.Error) -> Swift.Void
+extension CyphlensSSE.CyphlensEnvironment : Swift.Equatable {}
+extension CyphlensSSE.CyphlensEnvironment : Swift.Hashable {}
+extension CyphlensSSE.EventType : Swift.Equatable {}
+extension CyphlensSSE.EventType : Swift.Hashable {}
+extension CyphlensSSE.EventType : Swift.RawRepresentable {}
+extension CyphlensSSE.StatusType : Swift.Equatable {}
+extension CyphlensSSE.StatusType : Swift.Hashable {}
+extension CyphlensSSE.StatusType : Swift.RawRepresentable {}

@@ -1,0 +1,1489 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "CyphlensSSE",
+    "printedName": "CyphlensSSE",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Cyphlens",
+        "printedName": "Cyphlens",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Cyphlens",
+                "printedName": "CyphlensSSE.Cyphlens",
+                "usr": "s:11CyphlensSSE0A0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CyphlensSSE0A0CACycfc",
+            "mangledName": "$s11CyphlensSSE0A0CACycfc",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnvironment",
+            "printedName": "setEnvironment(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CyphlensEnvironment",
+                "printedName": "CyphlensSSE.CyphlensEnvironment",
+                "usr": "s:11CyphlensSSE0A11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE0A0C14setEnvironmentyyAA0aD0OF",
+            "mangledName": "$s11CyphlensSSE0A0C14setEnvironmentyyAA0aD0OF",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "listen",
+            "printedName": "listen(sessionId:onData:onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CyphlensSSE.EventType, any CyphlensSSE.CyphlensEvent) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CyphlensSSE.EventType, any CyphlensSSE.CyphlensEvent) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CyphlensSSE.EventType, any CyphlensSSE.CyphlensEvent)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "EventType",
+                            "printedName": "CyphlensSSE.EventType",
+                            "usr": "s:11CyphlensSSE9EventTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CyphlensEvent",
+                            "printedName": "any CyphlensSSE.CyphlensEvent",
+                            "usr": "s:11CyphlensSSE0A5EventP"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((any Swift.Error) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE0A0C6listen9sessionId6onData0F5ErrorySS_yAA9EventTypeO_AA0aI0_ptcSgys0H0_pcSgtF",
+            "mangledName": "$s11CyphlensSSE0A0C6listen9sessionId6onData0F5ErrorySS_yAA9EventTypeO_AA0aI0_ptcSgys0H0_pcSgtF",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE0A0C4stopyyF",
+            "mangledName": "$s11CyphlensSSE0A0C4stopyyF",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11CyphlensSSE0A0C",
+        "mangledName": "$s11CyphlensSSE0A0C",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CyphlensEnvironment",
+        "printedName": "CyphlensEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CyphlensSSE.CyphlensEnvironment.Type) -> CyphlensSSE.CyphlensEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CyphlensEnvironment",
+                    "printedName": "CyphlensSSE.CyphlensEnvironment",
+                    "usr": "s:11CyphlensSSE0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CyphlensSSE.CyphlensEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CyphlensEnvironment",
+                        "printedName": "CyphlensSSE.CyphlensEnvironment",
+                        "usr": "s:11CyphlensSSE0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CyphlensSSE0A11EnvironmentO7sandboxyA2CmF",
+            "mangledName": "$s11CyphlensSSE0A11EnvironmentO7sandboxyA2CmF",
+            "moduleName": "CyphlensSSE"
+          },
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CyphlensSSE.CyphlensEnvironment.Type) -> CyphlensSSE.CyphlensEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CyphlensEnvironment",
+                    "printedName": "CyphlensSSE.CyphlensEnvironment",
+                    "usr": "s:11CyphlensSSE0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CyphlensSSE.CyphlensEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CyphlensEnvironment",
+                        "printedName": "CyphlensSSE.CyphlensEnvironment",
+                        "usr": "s:11CyphlensSSE0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CyphlensSSE0A11EnvironmentO10productionyA2CmF",
+            "mangledName": "$s11CyphlensSSE0A11EnvironmentO10productionyA2CmF",
+            "moduleName": "CyphlensSSE"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CyphlensEnvironment",
+                "printedName": "CyphlensSSE.CyphlensEnvironment",
+                "usr": "s:11CyphlensSSE0A11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CyphlensEnvironment",
+                "printedName": "CyphlensSSE.CyphlensEnvironment",
+                "usr": "s:11CyphlensSSE0A11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE0A11EnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11CyphlensSSE0A11EnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "CyphlensSSE",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE0A11EnvironmentO9hashValueSivp",
+            "mangledName": "$s11CyphlensSSE0A11EnvironmentO9hashValueSivp",
+            "moduleName": "CyphlensSSE",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE0A11EnvironmentO9hashValueSivg",
+                "mangledName": "$s11CyphlensSSE0A11EnvironmentO9hashValueSivg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE0A11EnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11CyphlensSSE0A11EnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "CyphlensSSE",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CyphlensSSE0A11EnvironmentO",
+        "mangledName": "$s11CyphlensSSE0A11EnvironmentO",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventType",
+        "printedName": "EventType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "mfaSwipe",
+            "printedName": "mfaSwipe",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CyphlensSSE.EventType.Type) -> CyphlensSSE.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "CyphlensSSE.EventType",
+                    "usr": "s:11CyphlensSSE9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CyphlensSSE.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "CyphlensSSE.EventType",
+                        "usr": "s:11CyphlensSSE9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CyphlensSSE9EventTypeO8mfaSwipeyA2CmF",
+            "mangledName": "$s11CyphlensSSE9EventTypeO8mfaSwipeyA2CmF",
+            "moduleName": "CyphlensSSE"
+          },
+          {
+            "kind": "Var",
+            "name": "disconnect",
+            "printedName": "disconnect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CyphlensSSE.EventType.Type) -> CyphlensSSE.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "CyphlensSSE.EventType",
+                    "usr": "s:11CyphlensSSE9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CyphlensSSE.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "CyphlensSSE.EventType",
+                        "usr": "s:11CyphlensSSE9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CyphlensSSE9EventTypeO10disconnectyA2CmF",
+            "mangledName": "$s11CyphlensSSE9EventTypeO10disconnectyA2CmF",
+            "moduleName": "CyphlensSSE"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CyphlensSSE.EventType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "CyphlensSSE.EventType",
+                    "usr": "s:11CyphlensSSE9EventTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CyphlensSSE9EventTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11CyphlensSSE9EventTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "CyphlensSSE",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE9EventTypeO8rawValueSSvp",
+            "mangledName": "$s11CyphlensSSE9EventTypeO8rawValueSSvp",
+            "moduleName": "CyphlensSSE",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE9EventTypeO8rawValueSSvg",
+                "mangledName": "$s11CyphlensSSE9EventTypeO8rawValueSSvg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CyphlensSSE9EventTypeO",
+        "mangledName": "$s11CyphlensSSE9EventTypeO",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StatusType",
+        "printedName": "StatusType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pending",
+            "printedName": "pending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CyphlensSSE.StatusType.Type) -> CyphlensSSE.StatusType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatusType",
+                    "printedName": "CyphlensSSE.StatusType",
+                    "usr": "s:11CyphlensSSE10StatusTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CyphlensSSE.StatusType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatusType",
+                        "printedName": "CyphlensSSE.StatusType",
+                        "usr": "s:11CyphlensSSE10StatusTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CyphlensSSE10StatusTypeO7pendingyA2CmF",
+            "mangledName": "$s11CyphlensSSE10StatusTypeO7pendingyA2CmF",
+            "moduleName": "CyphlensSSE"
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CyphlensSSE.StatusType.Type) -> CyphlensSSE.StatusType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatusType",
+                    "printedName": "CyphlensSSE.StatusType",
+                    "usr": "s:11CyphlensSSE10StatusTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CyphlensSSE.StatusType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatusType",
+                        "printedName": "CyphlensSSE.StatusType",
+                        "usr": "s:11CyphlensSSE10StatusTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CyphlensSSE10StatusTypeO7successyA2CmF",
+            "mangledName": "$s11CyphlensSSE10StatusTypeO7successyA2CmF",
+            "moduleName": "CyphlensSSE"
+          },
+          {
+            "kind": "Var",
+            "name": "expired",
+            "printedName": "expired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CyphlensSSE.StatusType.Type) -> CyphlensSSE.StatusType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatusType",
+                    "printedName": "CyphlensSSE.StatusType",
+                    "usr": "s:11CyphlensSSE10StatusTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CyphlensSSE.StatusType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StatusType",
+                        "printedName": "CyphlensSSE.StatusType",
+                        "usr": "s:11CyphlensSSE10StatusTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CyphlensSSE10StatusTypeO7expiredyA2CmF",
+            "mangledName": "$s11CyphlensSSE10StatusTypeO7expiredyA2CmF",
+            "moduleName": "CyphlensSSE"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CyphlensSSE.StatusType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatusType",
+                    "printedName": "CyphlensSSE.StatusType",
+                    "usr": "s:11CyphlensSSE10StatusTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CyphlensSSE10StatusTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11CyphlensSSE10StatusTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "CyphlensSSE",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE10StatusTypeO8rawValueSSvp",
+            "mangledName": "$s11CyphlensSSE10StatusTypeO8rawValueSSvp",
+            "moduleName": "CyphlensSSE",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE10StatusTypeO8rawValueSSvg",
+                "mangledName": "$s11CyphlensSSE10StatusTypeO8rawValueSSvg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11CyphlensSSE10StatusTypeO",
+        "mangledName": "$s11CyphlensSSE10StatusTypeO",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CyphlensEvent",
+        "printedName": "CyphlensEvent",
+        "declKind": "Protocol",
+        "usr": "s:11CyphlensSSE0A5EventP",
+        "mangledName": "$s11CyphlensSSE0A5EventP",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TwoFactorEvent",
+        "printedName": "TwoFactorEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sessionId",
+            "printedName": "sessionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE14TwoFactorEventV9sessionIdSSvp",
+            "mangledName": "$s11CyphlensSSE14TwoFactorEventV9sessionIdSSvp",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE14TwoFactorEventV9sessionIdSSvg",
+                "mangledName": "$s11CyphlensSSE14TwoFactorEventV9sessionIdSSvg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StatusType",
+                "printedName": "CyphlensSSE.StatusType",
+                "usr": "s:11CyphlensSSE10StatusTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE14TwoFactorEventV6statusAA10StatusTypeOvp",
+            "mangledName": "$s11CyphlensSSE14TwoFactorEventV6statusAA10StatusTypeOvp",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StatusType",
+                    "printedName": "CyphlensSSE.StatusType",
+                    "usr": "s:11CyphlensSSE10StatusTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE14TwoFactorEventV6statusAA10StatusTypeOvg",
+                "mangledName": "$s11CyphlensSSE14TwoFactorEventV6statusAA10StatusTypeOvg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE14TwoFactorEventV9timestamps5Int64Vvp",
+            "mangledName": "$s11CyphlensSSE14TwoFactorEventV9timestamps5Int64Vvp",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE14TwoFactorEventV9timestamps5Int64Vvg",
+                "mangledName": "$s11CyphlensSSE14TwoFactorEventV9timestamps5Int64Vvg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiresAt",
+            "printedName": "expiresAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE14TwoFactorEventV9expiresAts5Int64VSgvp",
+            "mangledName": "$s11CyphlensSSE14TwoFactorEventV9expiresAts5Int64VSgvp",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE14TwoFactorEventV9expiresAts5Int64VSgvg",
+                "mangledName": "$s11CyphlensSSE14TwoFactorEventV9expiresAts5Int64VSgvg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sessionId:status:timestamp:expiresAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TwoFactorEvent",
+                "printedName": "CyphlensSSE.TwoFactorEvent",
+                "usr": "s:11CyphlensSSE14TwoFactorEventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "StatusType",
+                "printedName": "CyphlensSSE.StatusType",
+                "usr": "s:11CyphlensSSE10StatusTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CyphlensSSE14TwoFactorEventV9sessionId6status9timestamp9expiresAtACSS_AA10StatusTypeOs5Int64VAKSgtcfc",
+            "mangledName": "$s11CyphlensSSE14TwoFactorEventV9sessionId6status9timestamp9expiresAtACSS_AA10StatusTypeOs5Int64VAKSgtcfc",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TwoFactorEvent",
+                "printedName": "CyphlensSSE.TwoFactorEvent",
+                "usr": "s:11CyphlensSSE14TwoFactorEventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CyphlensSSE14TwoFactorEventV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11CyphlensSSE14TwoFactorEventV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE14TwoFactorEventV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11CyphlensSSE14TwoFactorEventV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CyphlensSSE",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CyphlensSSE14TwoFactorEventV",
+        "mangledName": "$s11CyphlensSSE14TwoFactorEventV",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CyphlensEvent",
+            "printedName": "CyphlensEvent",
+            "usr": "s:11CyphlensSSE0A5EventP",
+            "mangledName": "$s11CyphlensSSE0A5EventP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DisconnectEvent",
+        "printedName": "DisconnectEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CyphlensSSE15DisconnectEventV7messageSSvp",
+            "mangledName": "$s11CyphlensSSE15DisconnectEventV7messageSSvp",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CyphlensSSE15DisconnectEventV7messageSSvg",
+                "mangledName": "$s11CyphlensSSE15DisconnectEventV7messageSSvg",
+                "moduleName": "CyphlensSSE",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DisconnectEvent",
+                "printedName": "CyphlensSSE.DisconnectEvent",
+                "usr": "s:11CyphlensSSE15DisconnectEventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CyphlensSSE15DisconnectEventV7messageACSS_tcfc",
+            "mangledName": "$s11CyphlensSSE15DisconnectEventV7messageACSS_tcfc",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11CyphlensSSE15DisconnectEventV",
+        "mangledName": "$s11CyphlensSSE15DisconnectEventV",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CyphlensEvent",
+            "printedName": "CyphlensEvent",
+            "usr": "s:11CyphlensSSE0A5EventP",
+            "mangledName": "$s11CyphlensSSE0A5EventP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/andrea\/Documents\/cyphlens\/src.ios\/ios-sse-sdk\/CyphlensSSE\/Classes\/SSEDelegate.swift",
+      "kind": "BooleanLiteral",
+      "offset": 332,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andrea\/Documents\/cyphlens\/src.ios\/ios-sse-sdk\/CyphlensSSE\/Classes\/Types.swift",
+      "kind": "StringLiteral",
+      "offset": 165,
+      "length": 11,
+      "value": "\"MFA.SWIPE\""
+    },
+    {
+      "filePath": "\/Users\/andrea\/Documents\/cyphlens\/src.ios\/ios-sse-sdk\/CyphlensSSE\/Classes\/Types.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 12,
+      "value": "\"DISCONNECT\""
+    },
+    {
+      "filePath": "\/Users\/andrea\/Documents\/cyphlens\/src.ios\/ios-sse-sdk\/CyphlensSSE\/Classes\/Types.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 9,
+      "value": "\"PENDING\""
+    },
+    {
+      "filePath": "\/Users\/andrea\/Documents\/cyphlens\/src.ios\/ios-sse-sdk\/CyphlensSSE\/Classes\/Types.swift",
+      "kind": "StringLiteral",
+      "offset": 345,
+      "length": 9,
+      "value": "\"SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/andrea\/Documents\/cyphlens\/src.ios\/ios-sse-sdk\/CyphlensSSE\/Classes\/Types.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 9,
+      "value": "\"EXPIRED\""
+    }
+  ]
+}
