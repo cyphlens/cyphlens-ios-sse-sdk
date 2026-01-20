@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SSEExampleApp' do
+  use_frameworks!
+
+  # Pods for SSEExampleApp
+  pod 'CyphlensSSE'
+end

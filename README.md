@@ -1,6 +1,5 @@
 # CyphlensSSE
 
-[![CI Status](https://img.shields.io/travis/24449613/CyphlensSSE.svg?style=flat)](https://travis-ci.org/24449613/CyphlensSSE)
 [![Version](https://img.shields.io/cocoapods/v/CyphlensSSE.svg?style=flat)](https://cocoapods.org/pods/CyphlensSSE)
 [![License](https://img.shields.io/cocoapods/l/CyphlensSSE.svg?style=flat)](https://cocoapods.org/pods/CyphlensSSE)
 [![Platform](https://img.shields.io/cocoapods/p/CyphlensSSE.svg?style=flat)](https://cocoapods.org/pods/CyphlensSSE)
@@ -34,13 +33,23 @@ Then run:
 pod install
 ```
 
+❗ If you use CocoaPods with Xcode 15+:
+
+Set:
+```
+ENABLE_USER_SCRIPT_SANDBOXING = NO
+```
+
+This is required due to Apple sandbox restrictions on CocoaPods embed scripts.
+
+
 ### Swift Package Manager
 
 Add the following to your `Package.swift` dependencies:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/cyphlens/cyphlens-ios-sse-sdk", from: "1.0.0")
+    .package(url: "https://github.com/cyphlens/cyphlens-ios-sse-sdk.git", from: "1.0.3")
 ]
 ```
 
