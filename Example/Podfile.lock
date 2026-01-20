@@ -1,0 +1,16 @@
+PODS:
+  - CyphlensSSE (1.0.3)
+
+DEPENDENCIES:
+  - CyphlensSSE
+
+SPEC REPOS:
+  trunk:
+    - CyphlensSSE
+
+SPEC CHECKSUMS:
+  CyphlensSSE: f27d21c0b5a30e0cdf16479d910fb72c8c22825a
+
+PODFILE CHECKSUM: 5fb3560f795ea681c338d7289b3e768dbed0d49d
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CyphlensSSE_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyphlens SSE SDK Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="titleLabel">
+                                <rect key="frame" x="20" y="138" width="353" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="environmentLabel">
+                                <rect key="frame" x="20" y="197" width="353" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="environmentSegmentedControl">
+                                <rect key="frame" x="20" y="222" width="353" height="33"/>
+                                <segments>
+                                    <segment title="Sandbox"/>
+                                    <segment title="Production"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sessionIdLabel">
+                                <rect key="frame" x="20" y="274" width="353" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter session ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sessionIdTextField">
+                                <rect key="frame" x="20" y="299" width="353" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="startButton">
+                                <rect key="frame" x="20" y="363" width="166.66666666666666" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="startButton-height"/>
+                                </constraints>
+                                <state key="normal" title="Start Listening">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="startButton-action"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stopButton">
+                                <rect key="frame" x="206.66666666666663" y="363" width="166.33333333333337" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="stopButton-height"/>
+                                </constraints>
+                                <state key="normal" title="Stop Listening">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="stopButton-action"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Not Connected" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="statusLabel">
+                                <rect key="frame" x="20" y="433" width="353" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clearLogButton">
+                                <rect key="frame" x="300" y="462.33333333333331" width="73" height="30"/>
+                                <state key="normal" title="Clear Logs"/>
+                                <connections>
+                                    <action selector="clearLogsTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="clearLogButton-action"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="logTextView">
+                                <rect key="frame" x="20" y="502.33333333333326" width="353" height="301.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <string key="text">Logs will appear here...
+</string>
+                                <fontDescription key="fontDescription" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="clearLogButton" firstAttribute="top" secondItem="statusLabel" secondAttribute="bottom" constant="10" id="clearLogButton-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="clearLogButton" secondAttribute="trailing" constant="20" id="clearLogButton-trailing"/>
+                            <constraint firstItem="environmentLabel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="environmentLabel-leading"/>
+                            <constraint firstItem="environmentLabel" firstAttribute="top" secondItem="titleLabel" secondAttribute="bottom" constant="30" id="environmentLabel-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="environmentLabel" secondAttribute="trailing" constant="20" id="environmentLabel-trailing"/>
+                            <constraint firstItem="environmentSegmentedControl" firstAttribute="height" constant="32" id="environmentSegmentedControl-height"/>
+                            <constraint firstItem="environmentSegmentedControl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="environmentSegmentedControl-leading"/>
+                            <constraint firstItem="environmentSegmentedControl" firstAttribute="top" secondItem="environmentLabel" secondAttribute="bottom" constant="8" id="environmentSegmentedControl-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="environmentSegmentedControl" secondAttribute="trailing" constant="20" id="environmentSegmentedControl-trailing"/>
+                            <constraint firstItem="logTextView" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="logTextView-bottom"/>
+                            <constraint firstItem="logTextView" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="logTextView-leading"/>
+                            <constraint firstItem="logTextView" firstAttribute="top" secondItem="clearLogButton" secondAttribute="bottom" constant="10" id="logTextView-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="logTextView" secondAttribute="trailing" constant="20" id="logTextView-trailing"/>
+                            <constraint firstItem="sessionIdLabel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sessionIdLabel-leading"/>
+                            <constraint firstItem="sessionIdLabel" firstAttribute="top" secondItem="environmentSegmentedControl" secondAttribute="bottom" constant="20" id="sessionIdLabel-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sessionIdLabel" secondAttribute="trailing" constant="20" id="sessionIdLabel-trailing"/>
+                            <constraint firstItem="sessionIdTextField" firstAttribute="height" constant="44" id="sessionIdTextField-height"/>
+                            <constraint firstItem="sessionIdTextField" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sessionIdTextField-leading"/>
+                            <constraint firstItem="sessionIdTextField" firstAttribute="top" secondItem="sessionIdLabel" secondAttribute="bottom" constant="8" id="sessionIdTextField-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sessionIdTextField" secondAttribute="trailing" constant="20" id="sessionIdTextField-trailing"/>
+                            <constraint firstItem="startButton" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="startButton-leading"/>
+                            <constraint firstItem="startButton" firstAttribute="top" secondItem="sessionIdTextField" secondAttribute="bottom" constant="20" id="startButton-top"/>
+                            <constraint firstItem="startButton" firstAttribute="trailing" secondItem="stopButton" secondAttribute="leading" constant="-20" id="startButton-trailing"/>
+                            <constraint firstItem="startButton" firstAttribute="width" secondItem="stopButton" secondAttribute="width" id="startButton-width"/>
+                            <constraint firstItem="statusLabel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="statusLabel-leading"/>
+                            <constraint firstItem="statusLabel" firstAttribute="top" secondItem="startButton" secondAttribute="bottom" constant="20" id="statusLabel-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="statusLabel" secondAttribute="trailing" constant="20" id="statusLabel-trailing"/>
+                            <constraint firstItem="stopButton" firstAttribute="top" secondItem="sessionIdTextField" secondAttribute="bottom" constant="20" id="stopButton-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="stopButton" secondAttribute="trailing" constant="20" id="stopButton-trailing"/>
+                            <constraint firstItem="titleLabel" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="titleLabel-leading"/>
+                            <constraint firstItem="titleLabel" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="titleLabel-top"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="titleLabel" secondAttribute="trailing" constant="20" id="titleLabel-trailing"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clearLogButton" destination="clearLogButton" id="clearLogButton-outlet"/>
+                        <outlet property="environmentLabel" destination="environmentLabel" id="environmentLabel-outlet"/>
+                        <outlet property="environmentSegmentedControl" destination="environmentSegmentedControl" id="environmentSegmentedControl-outlet"/>
+                        <outlet property="logTextView" destination="logTextView" id="logTextView-outlet"/>
+                        <outlet property="sessionIdLabel" destination="sessionIdLabel" id="sessionIdLabel-outlet"/>
+                        <outlet property="sessionIdTextField" destination="sessionIdTextField" id="sessionIdTextField-outlet"/>
+                        <outlet property="startButton" destination="startButton" id="startButton-outlet"/>
+                        <outlet property="statusLabel" destination="statusLabel" id="statusLabel-outlet"/>
+                        <outlet property="stopButton" destination="stopButton" id="stopButton-outlet"/>
+                        <outlet property="titleLabel" destination="titleLabel" id="titleLabel-outlet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
