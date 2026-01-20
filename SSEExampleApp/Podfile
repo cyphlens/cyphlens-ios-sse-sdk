@@ -7,23 +7,3 @@ target 'SSEExampleApp' do
   # Pods for SSEExampleApp
   pod 'CyphlensSSE'
 end
-
-# 🔧 Fix CocoaPods rsync sandbox error
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['STRIP_INSTALLED_PRODUCT'] = 'NO'
-    end
-  end
-
-  # Replace rsync with cp -R in Embed Pods Frameworks phase
-  installer.aggregate_targets.each do |aggregate|
-    aggregate.user_project.native_targets.each do |t|
-      t.shell_script_build_phases.each do |phase|
-        if phase.name.include?('Embed Pods Frameworks')
-          phase.shell_script = phase.shell_script.gsub('rsync', 'cp -R')
-        end
-      end
-    end
-  end
-end
