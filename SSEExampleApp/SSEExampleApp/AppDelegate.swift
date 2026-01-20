@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Example
+//  SSEExampleApp
 //
 //  Created by Alex on 20/01/26.
 //

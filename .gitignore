@@ -21,7 +21,7 @@ xcuserdata/
 DerivedData
 *.hmap
 *.ipa
-/Example/Pods
+SSEExampleApp/Pods/
 
 # Bundler
 .bundle
