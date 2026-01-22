@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CyphlensSSE
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 @_exported import CyphlensSSE
 import Foundation
 import Swift
@@ -13,9 +13,7 @@ import _SwiftConcurrencyShims
   public init()
   @objc deinit
   public func setEnvironment(_ environment: CyphlensSSE.CyphlensEnvironment)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func listen(sessionId: Swift.String, onData: CyphlensSSE.EventCallback? = nil, onError: CyphlensSSE.CyphlensErrorCallback? = nil)
-  #endif
   public func stop()
 }
 public enum CyphlensEnvironment {
@@ -30,9 +28,7 @@ public enum CyphlensEnvironment {
 public enum EventType : Swift.String {
   case mfaSwipe
   case disconnect
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -42,9 +38,7 @@ public enum StatusType : Swift.String, Swift.Codable {
   case pending
   case success
   case expired
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -57,9 +51,7 @@ public struct TwoFactorEvent : CyphlensSSE.CyphlensEvent, Swift.Codable {
   public let status: CyphlensSSE.StatusType
   public let timestamp: Swift.Int64
   public let expiresAt: Swift.Int64?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(sessionId: Swift.String, status: CyphlensSSE.StatusType, timestamp: Swift.Int64, expiresAt: Swift.Int64?)
-  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }

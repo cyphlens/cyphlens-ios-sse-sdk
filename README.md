@@ -49,7 +49,7 @@ Add the following to your `Package.swift` dependencies:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/cyphlens/cyphlens-ios-sse-sdk.git", from: "1.0.3")
+    .package(url: "https://github.com/cyphlens/cyphlens-ios-sse-sdk.git", from: "<latest_version>")
 ]
 ```
 
