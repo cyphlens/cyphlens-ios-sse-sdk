@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CyphlensSSE'
-  s.version          = '1.0.3'
+  s.version          = '1.0.6'
   s.summary          = 'Cyphlens SDK for 2FA SSE - iOS SDK for Server-Sent Events integration'
 
   s.description      = <<-DESC
